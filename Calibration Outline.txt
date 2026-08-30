@@ -1,0 +1,18 @@
+The calibration roadmap
+Order	Calibration	Why
+1	Hotend PID	You already started this
+2	Bed PID	Establish stable bed temperature
+3	Verify fans	Make sure cooling behaves correctly
+4	Extruder rotation distance	Correct actual extrusion
+5	X/Y/Z motion verification	Make sure axes move correctly
+6	Bed/tramming adjustment	Mechanically level the bed
+7	CR Touch verification	Make sure probing works
+8	Z-offset	Establish nozzle-to-bed distance
+9	Bed mesh	Compensate for remaining bed variation
+10	First-layer test	Validate Z-offset + mesh
+11	Pressure Advance	Tune extrusion dynamics
+12	Input Shaper	Tune resonance/acceleration
+13	Flow/extrusion multiplier	Fine-tune dimensional/material accuracy
+14	Temperature tower	Find ideal filament temperature
+15	Retraction	Tune stringing
+16	Acceleration/speed	Exploit your new high-flow hotend
