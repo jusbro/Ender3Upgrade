@@ -1,14 +1,17 @@
-The calibration roadmap
-Order	Calibration	Why
-1	Hotend PID	You already started this
+
+1	Hotend PID	
+  PID_CALIBRATE HEATER=extruder TARGET=240
 2	Bed PID	Establish stable bed temperature
+  PID_CALIBRATE HEATER=heater_bed TARGET=80
 3	Verify fans	Make sure cooling behaves correctly
 4	Extruder rotation distance	Correct actual extrusion
 5	X/Y/Z motion verification	Make sure axes move correctly
 6	Bed/tramming adjustment	Mechanically level the bed
 7	CR Touch verification	Make sure probing works
 8	Z-offset	Establish nozzle-to-bed distance
+  PROBE_CALIBRATE
 9	Bed mesh	Compensate for remaining bed variation
+  BED_MESH_CALIBRATE
 10	First-layer test	Validate Z-offset + mesh
 11	Pressure Advance	Tune extrusion dynamics
 12	Input Shaper	Tune resonance/acceleration
