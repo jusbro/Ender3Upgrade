@@ -14,10 +14,15 @@
   BED_MESH_CALIBRATE
 10	First-layer test	Validate Z-offset + mesh
 11	Pressure Advance	Tune extrusion dynamics
+  M83
+  G1 E100 F100
+
 12	Input Shaper	Tune resonance/acceleration
   ACCELEROMETER_QUERY
   SHAPER_CALIBRATE
 13	Flow/extrusion multiplier	Fine-tune dimensional/material accuracy
+  print cube with 1 horizontal wall, no top, and 3 or 4 bottom. 
+  Measure the width of the side wall after printing
 14	Temperature tower	Find ideal filament temperature
 15	Retraction	Tune stringing
 16	Acceleration/speed	Exploit your new high-flow hotend
